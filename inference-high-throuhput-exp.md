@@ -126,9 +126,9 @@ The following figures show theoretically how the *FWER* can be computed:
 
 Now, let's try to understand the concept of a *error controlling
 procedure*. We can think of it as defnining a set of instructions, such
-as *"*reject all the null hypothesis for for which p-values &lt;
-0.0001"\* or *"reject the null hypothesis* for the 10 features with
-smallest p-values". Then, knowing the *p-values* are random variables,
+as *"reject all the null hypothesis for for which p-values &lt;
+0.0001" or *"reject the null hypothesis for the 10 features with
+smallest p-values"*. Then, knowing the *p-values* are random variables,
 we use statistical theory to compute how many mistakes, on average, will
 we make if we follow this procedure. More precisely we commonly bounds
 on these rates, meaning that we show that they are smaller than some
@@ -161,7 +161,7 @@ Let's consider the following figure:
 
 As we have learned about the family wide error rate *FWER*, it is the
 probability of incorrectly rejecting the null at least once, i.e., the
-probability that *Pr(V&gt;0)*.
+probability that *Pr*(*V*&gt;0).
 
 What we want to do in practice is choose a *procedure* that guarantees
 this probability is smaller than a predetermined value such as
@@ -169,27 +169,27 @@ this probability is smaller than a predetermined value such as
 
 We have already learned that the procedure "pick all the genes with
 p-value &lt;0.05" fails miserably as we have seen that
-*P**r*(*V* &gt; 0)∼1. So what else can we do?
+*Pr*(*V* &gt; 0)∼1. So what else can we do?
 
 The **Bonferroni** procedure assumes we have computed *p-values* for
 each test and asks what constant *k* should we pick so that the
 procedure "pick all genes with p-value less than *k*" has
-*Pr(V&gt;0)=0.05*. And we typically want to be *conservative* rather
-than lenient, so we accept a procedure that has *P**r*(*V* &gt; 0)≤0.05.
+*Pr*(*V*&gt;0)=0.05. And we typically want to be *conservative* rather
+than lenient, so we accept a procedure that has *Pr*(*V* &gt; 0)≤0.05.
 
 So the first result we rely on is that this probability is largest when
 all the null hypotheses are true:
 
-*P**r*(*V* &gt; 0)≤ *Pr(V&gt;0|all nulls are true)* or
-*P**r*(*V* &gt; 0)≤*P**r*(*V* &gt; 0|*m*1 = 0)
+*Pr*(*V* &gt; 0)≤ *Pr(V&gt;0|all nulls are true)* or
+*Pr*(*V* &gt; 0)≤*Pr*(*V* &gt; 0|*m*1 = 0)
 
 If the tests are *independent* then
-*P**r*(*V* &gt; 0|*m*1 = 0)=1 − (1 − *k*)<sup>*m*</sup> and we pick *k*
+*Pr*(*V* &gt; 0|*m*1 = 0)=1 − (1 − *k*)<sup>*m*</sup> and we pick *k*
 so that 1 − (1 − *k*)<sup>*m*</sup> = *α*⇒
 *k* = 1 − (1 − *α*)<sup>1/*m*</sup>, this is called **Sidak** procedure.
 Now, this requires the tests to be independent. The **Bonferroni**
 procedure does not make this assumption, if we set *k* = *α*/*m* this
-procedure has the property that *P**r*(*V* &gt; 0)≤*α*. The following
+procedure has the property that *Pr*(*V* &gt; 0)≤*α*. The following
 figure shows the proof.
 
 ![](https://sandipanweb.files.wordpress.com/2017/04/f31.png)
@@ -205,21 +205,3 @@ can be seen from the next figures, **Bonferroni** is more conservative.
 
     ## [1] 0.0473
 
-As explained in
-<a href http://genomicsclass.github.io/book/pages/multiple_testing.html></a>, the
-*specificity* constraint posed by *FWER* can sometimes be an over-kill.
-A widely used alternative to the FWER is the false discover rate
-(*FDR*). The idea behind FDR is to focus on the random variable *Q* as
-follows:
-
-$$   
-Q = 
-     \\begin{cases}
-       \\frac{V}{R} & R &gt; 0\\\\
-       0 & V = R = 0
-     \\end{cases}
-$$
-
-*Q* is a random variable that can take values between 0 and 1 and we can
-define a rate by considering the average (expected value) of *Q* which
-is defined as the *FDR*.
