@@ -25,15 +25,15 @@ mathematically proved in the following figure:
 -   Under *null-hypothesis* the *p-values* form a *uniform
     distribution*.
 
-![](C:/courses/Edx/Past/HarvardX/PH525.3x%20Statistical%20Inference%20and%20Modeling%20for%20High-throughput%20Experiments/im1.png)
+![](https://sandipanweb.files.wordpress.com/2017/04/im18.png)
 
 To see this, let's see how *p-values* change when we take different
 samples. The next table shows the dataset *Bodyweight* from which
 
-1.  The *control* and *treatment* groups each of size 12 are
-    randomly drawn.
-2.  Then *2-sample t-test* is performed with this groups to compute the
-    *p-value*.
+1.  The *control* and *treatment* groups each of size 12 are randomly drawn.
+
+2.  Then *2-sample t-test* is performed with this groups to compute the *p-value*.
+
 3.  Steps 1-2 is replicated 10000 times.
 
 Bodyweight
@@ -86,16 +86,12 @@ a single replication.
 
 The following animation shows first 10 replication steps.
 
-<video   controls loop>
-<source src="ex1_files/figure-markdown_strict/a1-.webm" />
-<p>
-video of chunk a1
-</p>
-</video>
-The following figure shows the distribution of the *p-values* obtained,
+![](https://sandipanweb.files.wordpress.com/2017/04/animation.gif)
+
+The following figure shows the distribution of the *p-values* obtained, 
 which is nearly *uniform*, as expected.
 
-![](ex1_files/figure-markdown_strict/unnamed-chunk-3-1.png)
+![](https://sandipanweb.files.wordpress.com/2017/04/pdist.png)
 
 Now, let's assume that we are testing the effectiveness of 20 diets on
 mice weight. For each of the 20 diets let's run an experiment with 10
@@ -111,26 +107,22 @@ The following figures show using *Monte-Carlo* simulations how some of
 the *t-tests* reject the *null-hypothesis* (at 5% level of significance)
 simply *by chance*, even though it is *true*.
 
-<video   controls loop>
-<source src="ex1_files/figure-markdown_strict/a2-.webm" />
-<p>
-video of chunk a2
-</p>
-</video>
-![](ex1_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+![](https://sandipanweb.files.wordpress.com/2017/04/test.gif)
+
+![](https://sandipanweb.files.wordpress.com/2017/04/fp.png)
 
 The following figure shows how the *FWER* (*Family-wise error rate*,
 i.e., *probability of rejecting at least one true null-hypothesis*)
 computed with (*Monte-Carlo simulation*) increases with the number of
 multiple hypothesis tests.
 
-![](C:/courses/Edx/Past/HarvardX/PH525.3x%20Statistical%20Inference%20and%20Modeling%20for%20High-throughput%20Experiments/im3.png)
+![](https://sandipanweb.files.wordpress.com/2017/04/f13.png)
 
 The following figures show theoretically how the *FWER* can be computed:
 
-![](C:/courses/Edx/Past/HarvardX/PH525.3x%20Statistical%20Inference%20and%20Modeling%20for%20High-throughput%20Experiments/im2.png)
+![](https://sandipanweb.files.wordpress.com/2017/04/im25.png)
 
-![](ex1_files/figure-markdown_strict/unnamed-chunk-6-1.png)
+![](https://sandipanweb.files.wordpress.com/2017/04/f14.png)
 
 Now, let's try to understand the concept of a *error controlling
 procedure*. We can think of it as defnining a set of instructions, such
@@ -165,7 +157,7 @@ Bonferroni Correction Exercises (Bonferonni versus Sidak)
 
 Let's consider the following figure:
 
-![](C:/courses/Edx/Past/HarvardX/PH525.3x%20Statistical%20Inference%20and%20Modeling%20for%20High-throughput%20Experiments/im4.png)
+![](https://sandipanweb.files.wordpress.com/2017/04/im46.png?w=676)
 
 As we have learned about the family wide error rate *FWER*, it is the
 probability of incorrectly rejecting the null at least once, i.e., the
@@ -200,22 +192,22 @@ procedure does not make this assumption, if we set *k* = *α*/*m* this
 procedure has the property that *P**r*(*V* &gt; 0)≤*α*. The following
 figure shows the proof.
 
-![](C:/courses/Edx/Past/HarvardX/PH525.3x%20Statistical%20Inference%20and%20Modeling%20for%20High-throughput%20Experiments/im5.png)
+![](https://sandipanweb.files.wordpress.com/2017/04/f31.png)
 
 Let's plot of *α*/*m* and 1 − (1 − *α*)<sup>1/*m*</sup> for various
 values of *m&gt;1*. Which procedure is more conservative (picks less
 genes, i.e. rejects less null hypothesis): Bonferroni's or Sidak's? As
 can be seen from the next figures, **Bonferroni** is more conservative.
 
-![](ex1_files/figure-markdown_strict/unnamed-chunk-7-1.png)![](ex1_files/figure-markdown_strict/unnamed-chunk-7-2.png)
+![](https://sandipanweb.files.wordpress.com/2017/04/f41.png)
 
     ## [1] 0.0467
 
     ## [1] 0.0473
 
 As explained in
-*<http://genomicsclass.github.io/book/pages/multiple_testing.html*>, the
-*specificity\* constraint posed by *FWER* can sometimes be an over-kill.
+<a href http://genomicsclass.github.io/book/pages/multiple_testing.html></a>, the
+*specificity* constraint posed by *FWER* can sometimes be an over-kill.
 A widely used alternative to the FWER is the false discover rate
 (*FDR*). The idea behind FDR is to focus on the random variable *Q* as
 follows:
