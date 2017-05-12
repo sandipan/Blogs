@@ -115,7 +115,7 @@ The following figure shows the **11x11 Gaussian Kernels** generated with **1D i.
 The following figures show the application of the **Gaussian kernels** of different **bandwidth** on the *following grayscale image* and the output images after *filtering*. As expected, the **blur** effect increases as the *bandwidth* of the *Gaussian kernel* increases. 
    
 
-![png](https://sandipanweb.files.wordpress.com/2017/05/a_gaussian_kernel.png)
+![](https://sandipanweb.files.wordpress.com/2017/05/a_gaussian_kernel.png)
 
 
 
@@ -149,14 +149,9 @@ The following figures show the application of the **Sharpen kernels** of differe
 One last thing we shall do to get a feel for is *nonlinear filtering*. So far, we have been doing everything by multiplying the input image pixels by various coefficients and summing the results together. A median filter works in a very different way, by simply choosing a single value from the surrounding patch in the image.
 
 The next figure shows the effect of **Median flitering** on some images. As expected, with a **11x11** mask, some of the images are getting quite **blurred**.
+ 
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw1_solved\\all_median.png')
-
-
-
-
-![png](https://sandipanweb.files.wordpress.com/2017/05/all_median.png)
+![](https://sandipanweb.files.wordpress.com/2017/05/all_median.png)
 
 
 
@@ -204,7 +199,6 @@ The steps for **edge detection**:
 Now we have the rate at which the image is changing in the x and y directions, but it makes more sense to talk about images in terms of *edges*, and their *orientations* and *intensities*. As we will see, we can use some trigonometry to transform between these two representations.
 
 First, let’s see how our sobel filters respond to edges at different orientations from the following figures:
-
 
     
 ![](https://sandipanweb.files.wordpress.com/2017/05/im43.png)
