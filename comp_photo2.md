@@ -2,45 +2,7 @@
 #Some more Computational Photography: Merging and Blending Images using Gaussian and Laplacian Pyramids
 
 The following problem appeared as an assignment in the **coursera course Computational Photography (by Georgia Tech, 2013)**. The following description of the problem is taken directly from the assignment's description.
-
-
-    #ipython nbconvert pcaiso.ipynb
-    %matplotlib inline
-    
-    from IPython.display import HTML
-    
-    HTML('''<script>
-    code_show=true; 
-    function code_toggle() {
-     if (code_show){
-     $('div.input').hide();
-     } else {
-     $('div.input').show();
-     }
-     code_show = !code_show
-    } 
-    $( document ).ready(code_toggle);
-    </script>
-    <form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>''')
-
-
-
-
-<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
-
-
+   
 
 ## Introduction
 
@@ -52,26 +14,9 @@ Pixel values of 255 in the *mask* image are scaled to the value 1 in the mask py
 
 The following figures describe the *pyramid blending process* with couple of sample images.
 
+![png](https://sandipanweb.files.wordpress.com/2017/05/im113.png?w=871)
 
-    from IPython.display import Image
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\im1.png')
-
-
-
-
-![png](output_4_0.png)
-
-
-
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\im2.png')
-
-
-
-
-![png](output_5_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/im210.png?w=896&h=285)
 
 ## Reduce
 
@@ -79,20 +24,11 @@ This function takes an image and *subsamples* it down to a quarter of the size (
 
 The following **5x5 generating kernel** will be used for *convolution*, for the *reduce* and later for the *expand* function.
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\kern.png')
-
-
-
-
-![png](output_7_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/kern.png)
 
 ## Expand
 
 This function takes an image and *supersamples* it to four times the size (multiplying the height and width by two). After increasing the size, we have to interpolate the missing values by running over it with a *smoothing filter*.
-
 
 ## Gaussian Pyramid
 
@@ -124,73 +60,30 @@ This function is given a *laplacian pyramid*, and is expected to *'flatten'* it 
 
 The following figures show a few pairs of input images, the masks, the blended output images, along with the *gassian* and *laplacian* pyramids.
 
-### Input Images
+### 1. Input Images
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\i1.png')
-
-
-
-
-![png](output_11_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/i1.png)
 
 ### Gaussian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample_gauss_pyr.jpg', width=400)
-
-
-
-
-![jpeg](output_13_0.jpe)
-
-
+![jpeg](https://sandipanweb.files.wordpress.com/2017/05/sample_gauss_pyr.jpg)
 
 ### Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample_laplace_pyr.jpg', width=400)
-
-
-
-
-![jpeg](output_15_0.jpe)
-
+![jpeg](https://sandipanweb.files.wordpress.com/2017/05/sample_laplace_pyr.jpg)
 
 
 ### Blended Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample_outpyr.jpg',  width=200)
-
-
-
-
-![jpeg](output_17_0.jpe)
-
+![jpeg](https://sandipanweb.files.wordpress.com/2017/05/sample_outpyr.jpg)
 
 
 ### Blended Output Image
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\o1.png')
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/o1.png)
 
 
-
-![png](output_19_0.png)
-
-
-
-### Input Images
-
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\i2.png')
-
-
-
+### 2. Input Images
 
 ![png](output_21_0.png)
 
