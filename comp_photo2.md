@@ -56,7 +56,7 @@ white image, pixels where the mask is 0 should be taken from the black image. Pi
 
 This function is given a *laplacian pyramid*, and is expected to *'flatten'* it to an image. We need to take the top layer, expand it, and then add it to the next layer. This results in a pyramid of one level less than we started with. We continue this process until we are left with only a single layer.
 
-## Results
+## Results (some images are taken from the same Computational Photography Course)
 
 The following figures show a few pairs of input images, the masks, the blended output images, along with the *gassian* and *laplacian* pyramids.
 
@@ -72,11 +72,9 @@ The following figures show a few pairs of input images, the masks, the blended o
 
 ![jpeg](https://sandipanweb.files.wordpress.com/2017/05/sample_laplace_pyr.jpg)
 
-
 ### Blended Laplacian Pyramids
 
 ![jpeg](https://sandipanweb.files.wordpress.com/2017/05/sample_outpyr.jpg)
-
 
 ### Blended Output Image
 
@@ -85,298 +83,109 @@ The following figures show a few pairs of input images, the masks, the blended o
 
 ### 2. Input Images
 
-![png](output_21_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/i2.png)
 
 ### Gaussian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample1_laplace_pyr.jpg', width=400)
-
-
-
-
-![jpeg](output_23_0.jpe)
-
-
+![jpeg](https://sandipanweb.files.wordpress.com/2017/05/sample1_gauss_pyr.jpg)
 
 ### Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample1_laplace_pyr.jpg', width=400)
-
-
-
-
-![jpeg](output_25_0.jpe)
-
-
+![jpeg](https://sandipanweb.files.wordpress.com/2017/05/sample1_laplace_pyr.jpg)
 
 ### Blended Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample1_outpyr.png',  width=200)
-
-
-
-
-![png](output_27_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample1_outpyr.png)
 
 ### Blended Output Image
 
+![png](https://sandipanweb.files.wordpress.com/2017/05/o2.png)
 
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\o2.png')
+### 3. Input Images
 
-
-
-
-![png](output_29_0.png)
-
-
-
-### Input Images
-
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\i3.png')
-
-
-
-
-![png](output_31_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/i3.png)
 
 ### Gaussian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample2_gauss_pyr.png', width=400)
-
-
-
-
-![png](output_33_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample2_gauss_pyr.png)
 
 ### Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample2_laplace_pyr.png', width=400)
-
-
-
-
-![png](output_35_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample2_laplace_pyr.png)
 
 ### Blended Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample2_outpyr.png',  width=200)
-
-
-
-
-![png](output_37_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample2_outpyr.png)
 
 ### Blended Output Image
 
+![png](https://sandipanweb.files.wordpress.com/2017/05/o3.png)
 
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\o3.png')
+### 4. Input Images
 
-
-
-
-![png](output_39_0.png)
-
-
-
-### Input Images
-
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\i4.png')
-
-
-
-
-![png](output_41_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/i4.png)
 
 ### Gaussian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample3_gauss_pyr.png', width=400)
-
-
-
-
-![png](output_43_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample3_gauss_pyr.png)
 
 ### Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample3_laplace_pyr.png', width=400)
-
-
-
-
-![png](output_45_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample3_laplace_pyr.png)
 
 ### Blended Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample3_outpyr.png',  width=200)
-
-
-
-
-![png](output_47_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample3_outpyr.png)
 
 ### Blended Output Image
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\o4.png')
-
-
-
-
-![png](output_49_0.png)
+![png](https://sandipanweb.files.wordpress.com/2017/05/o4.png)
 
 
 
 The next example shows how the pyramid pipeline can be used to **edit** an image **background**.
 
-### Input Images
+### 5. Input Images
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\i5.png')
-
-
-
-
-![png](output_52_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/i5.png)
 
 ### Gaussian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample4_gauss_pyr.png', width=400)
-
-
-
-
-![png](output_54_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample4_gauss_pyr.png)
 
 ### Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample4_laplace_pyr.png', width=400)
-
-
-
-
-![png](output_56_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample4_laplace_pyr.png)
 
 ### Blended Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample4_outpyr.png',  width=200)
-
-
-
-
-![png](output_58_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample4_outpyr.png)
 
 ### Blended Output Image
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\o5.png')
-
-
-
-
-![png](output_60_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/o5.png)
 
 As can be seen from the output image above, the pyramid blending pipleine did a good job in blending the two images.
 
-### Input Images
 
+### 6. Input Images
 
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\i6.png')
-
-
-
-
-![png](output_62_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/i6.png)
 
 ### Gaussian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample6_gauss_pyr.png', width=400)
-
-
-
-
-![png](output_64_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample6_gauss_pyr.png)
 
 ### Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample6_laplace_pyr.png', width=400)
-
-
-
-
-![png](output_66_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample6_laplace_pyr.png)
 
 ### Blended Laplacian Pyramids
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\sample6_outpyr.png',  width=200)
-
-
-
-
-![png](output_68_0.png)
-
-
+![png](https://sandipanweb.files.wordpress.com/2017/05/sample6_outpyr.png)
 
 ### Blended Output Image
 
-
-    Image(filename='C:\\courses\\coursera\\Past\\Image Processing & CV\\Gatech - Computational Photography\\Assignments\\HW\\hw3_solved\\o6.png')
-
-
-
-
-![png](output_70_0.png)
+![png](https://sandipanweb.files.wordpress.com/2017/05/o6.png)
 
 
