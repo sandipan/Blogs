@@ -1,5 +1,5 @@
 
-#Some more Computational Photography: Merging and Blending Images using Gaussian and Laplacian Pyramids
+# Some more Computational Photography: Merging and Blending Images using Gaussian and Laplacian Pyramids
 
 The following problem appeared as an assignment in the **coursera course Computational Photography (by Georgia Tech, 2013)**. The following description of the problem is taken directly from the assignment's description.
    
