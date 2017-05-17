@@ -1,5 +1,5 @@
 
-#Some Image Processing and Computational Photography: Convolution and Filtering 
+# Some Image Processing and Computational Photography: Convolution and Filtering 
 
 The following problems appeared as an assignment in the **coursera course Computational Photography (by Georgia Tech university)**. The following descriptions of the problems are taken directly from the assignments' descriptions.
 
