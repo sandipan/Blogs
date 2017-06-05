@@ -6,7 +6,7 @@ This problem appeared as an assignment in the **coursera course Natural Language
 In this article, a **probabilistic parser** will be built by implementing the **CKY parser**. The *Manually Annotated Sub-Corpus* (**MASC**) from the American National Corpus (ANC): http://www.anc.org/MASC/Home.html will be used for this purpose.
 
 
-##Instruction
+## Instructions
 
 First, we need to learn a **PCFG** from the *training trees*. Since the *training set* is handparsed this learning is very easy. We need to simply set: $$P(N_j \rightarrow \zeta)=\frac{C(N_j \rightarrow \zeta)}{\sum\limits_{\gamma} C(N_j \rightarrow \gamma)}$$ where $C(N_j \rightarrow \zeta)$ is the *count* observed for that *production* in the data set. While we could consider *smoothing rule rewrite probabilities*, it is sufficient to just work with *unsmoothed* **MLE probabilities** for *rules*. (Doing anything else makes things rather more complex and slow, since every rewrite will have a nonzero probability, so let's get things working with an unsmoothed grammar before considering adding smoothing!).
 
