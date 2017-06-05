@@ -1,5 +1,5 @@
 
-#Some more Image Processing: Ostu's Method, Hough Transform and Motion-based Segmentation with Python and OpenCV
+# Some more Image Processing: Ostu's Method, Hough Transform and Motion-based Segmentation with Python and OpenCV
 
 Some of the following problems appeared in the lectures and the exercises in the **coursera course Image Processing (by NorthWestern University)**. Some of the following descriptions of the problems are taken from the exercise's description.
 
@@ -60,21 +60,21 @@ The next figure shows how the motion-based using ADI based techniques can be app
 
 Again, the next animations show how the moving objects can be segemented from the non-moving ones from the consecutive frames of a video. First the frames from the video are *binarized* using **Ostu's** method and then **absolute ADI** is applied to separate out the moving objects.
 
-![png](https://sandipanweb.files.wordpress.com/2017/05/in2.gif)
+![](https://sandipanweb.files.wordpress.com/2017/05/in2.gif)
 
-![png](https://sandipanweb.files.wordpress.com/2017/05/motion_bin.gif)
+![](https://sandipanweb.files.wordpress.com/2017/05/motion_bin.gif)
 
-![png](https://sandipanweb.files.wordpress.com/2017/05/motion_adi.gif)
+![](https://sandipanweb.files.wordpress.com/2017/05/motion_adi.gif)
 
 The next video is from some past cricket match with Sachin Tendulkar batting (taken from youtube) and the following one is the motion-segmented video with ADI:
 
-![png](https://sandipanweb.files.wordpress.com/2017/05/sachin.gif)
-![png](https://sandipanweb.files.wordpress.com/2017/05/sachin_adi.gif)
+![](https://sandipanweb.files.wordpress.com/2017/05/sachin.gif)
+![](https://sandipanweb.files.wordpress.com/2017/05/sachin_adi.gif)
 
 The next video is captured at a  live performance of a dance-drama written by Tagore and the following one is the motion-segmented video with ADI:
 
-![png](https://sandipanweb.files.wordpress.com/2017/05/kalmrigaya.gif)
-![png](https://sandipanweb.files.wordpress.com/2017/05/kalmrigaya_adi1.gif)
+![](https://sandipanweb.files.wordpress.com/2017/05/kalmrigaya.gif)
+![](https://sandipanweb.files.wordpress.com/2017/05/kalmrigaya_adi1.gif)
 
 
     
