@@ -1,0 +1,41 @@
+---
+title: "Sentiment Analysis"
+author: "Sandipan Dey"
+date: "6 June 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is a shiny application that does simple sentiment analysis with R, to have an insight about the people's sentiment about the smartphones released in India for a couple of weeks over a past time period, it was written a few years back (in 2014), for demonstration purpose, with the tweets collected (with twitter API) over a few weeks at that point of time.
+
+The web-application visualizes the sentiment analysis scores for tweets (during Mar 17th - April 4th 2014) on smartphones in India in a few different ways. The web page has the following tabs each one for the following different purpose:
+
+1. Map: Visualizes the overall sentiment scores for different smartphones brands across different locations in India.
+2. Trend: Visualizes the sentiment scores for different smartphones brands for at different times in a day for a selected day as time series.
+3. Polarity: Visualizes the polarity of the tweets for different smartphones brands for at different times in a day for a selected day as time series.
+4. Pie: Visualizes the pie chart for the overall tweet sentiment classes for different smartphones brands.
+5. Wordcloud: Visualizes the word-cloud for all the tweets (combined) for all the brands.
+6. Compare Brands: Visualizes and compares different smartphones brands w.r.t. relative happiness, unhappiness and social mention.
+7. Topic Clusters: Visualizes and clusters all the tweet texts using hierarchical clustering into selected number of clusters.
+8. Tweets: Visualizes the raw data used for the analysis in tabular form.
+The shiny application can be found up and running here.
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
